@@ -1,0 +1,29 @@
+.stretched-tabs {
+    max-width: 100vw;
+    background-color: #031833;
+    font-size: 3em !important;
+}
+
+::ng-deep .mat-mdc-tab-header {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    --mdc-tab-indicator-active-indicator-height: 2px;
+    --mdc-tab-indicator-active-indicator-shape: 0;
+    --mdc-secondary-navigation-tab-container-height: 10vh !important;
+}
+
+::ng-deep .mat-mdc-tab .mdc-tab__text-label {
+    color: var(--mat-tab-header-inactive-label-text-color);
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.5em;
+    color: white !important;
+    color: white;
+}
+
+
+
+
+  

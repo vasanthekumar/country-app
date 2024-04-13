@@ -1,0 +1,22 @@
+<table *ngIf="listOfCountries" mat-table [dataSource]="listOfCountries" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="name">
+      <th class="table-header" mat-header-cell *matHeaderCellDef> NAME </th>
+      <td class="table-body country-name" *matCellDef="let element" (click)="getContryInformation(element.name)"> {{element.name}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="countryCode">
+      <th mat-header-cell *matHeaderCellDef> COUNTRY NAME </th>
+      <td class="table-body" *matCellDef="let element"> {{element.countryCode}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

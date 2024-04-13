@@ -1,0 +1,9 @@
+<div>
+<mat-card>
+    <mat-card-content>
+        <div class="title">{{title | uppercase}}</div>
+        <div *ngIf="!displayImage" class="value">{{value}}</div>
+        <div *ngIf="displayImage" class="image"><img [src]="value" width="20%" height="8%"/></div>
+    </mat-card-content>
+</mat-card>
+</div>

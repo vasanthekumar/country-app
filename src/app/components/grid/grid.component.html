@@ -1,0 +1,8 @@
+<mat-grid-list cols="4" rowHeight="7vh">
+    <mat-grid-tile colspan="4" rowspan="5.5"><app-country-table [listOfCountries]="listOfCountries" (countryMoreInfo)='countryMoreInfo($event)'></app-country-table></mat-grid-tile>
+    <mat-grid-tile colspan="4" rowspan="1"><div class="sub-title">Selected Country - {{countryName}}</div></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><app-population [population]="population"></app-population></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><app-capital [capital]="capital"></app-capital></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><app-country-code [countryCode]="countryCode"></app-country-code></mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2"><app-flag [flag]="flag"></app-flag></mat-grid-tile>
+</mat-grid-list>
